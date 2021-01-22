@@ -5,3 +5,4 @@ apt-get install -y ffmpeg
 apt autoremove
 chmod +x "/content/ydl/downvideo.sh"
 chmod +x "/content/ydl/downmp3.sh"
+pip3 install tidal-dl --upgrade
