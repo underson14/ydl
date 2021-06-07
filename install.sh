@@ -1,7 +1,8 @@
 wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
 chmod a+rx /usr/local/bin/youtube-dl
 apt install -y atomicparsley
-apt install -y ffmpeg
+git clone https://github.com/underson14/colab-ffmpeg-cuda.git
+cp -r ./colab-ffmpeg-cuda/bin/. /usr/bin/
 apt install axel -y
 apt autoremove
 chmod +x "/content/ydl/downvideo.sh"
