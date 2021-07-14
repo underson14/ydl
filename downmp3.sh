@@ -1,1 +1,4 @@
-youtube-dl -cio '/content/drive/My Drive/youtube-dl/MP3/%(title)s.%(ext)s' --hls-prefer-native --embed-thumbnail --add-metadata -f bestaudio --extract-audio --audio-format mp3 --audio-quality 320k \
+time youtube-dl --autonumber-start 1 -ci --hls-prefer-native \
+--add-metadata --embed-thumbnail -f \
+bestaudio --extract-audio --audio-format mp3 --audio-quality 320k \
+-o "${1}/%(autonumber)s.%(title)s.%(ext)s" $2
